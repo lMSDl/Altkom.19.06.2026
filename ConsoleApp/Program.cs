@@ -39,7 +39,7 @@ IEnumerable<Product> GenerateProducts()
     }
 }
 
-Point3D CreatePoint(float[] data)
+static Point3D CreatePoint(float[] data)
 {
     if (data.Length < 3)
     {

@@ -1,6 +1,8 @@
 <Solution>
   <Project Path="ConsoleApp/ConsoleApp.csproj" />
+  <Project Path="Hangman.ConsoleApp/Hangman.ConsoleApp.csproj">
+    <Build Solution="Debug|*" Project="false" />
+  </Project>
   <Project Path="Models/Models.csproj" />
   <Project Path="WebApp/WebApp.csproj" Id="53d3e6d2-7e17-40f2-a73a-a106966b917b" />
 </Solution>
-

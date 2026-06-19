@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="BenchmarkSuite1/BenchmarkSuite1.csproj" />
   <Project Path="ConsoleApp/ConsoleApp.csproj" />
+  <Project Path="ConsoleApp_Debug/ConsoleApp_Debug.csproj" Id="0a3d87dd-9bc7-4ec2-8f4b-77ada50d50a0" />
   <Project Path="ConsoleApp_Profiler/ConsoleApp_Profiler.csproj" Id="4a4bbf2b-201a-49ea-8276-de53f24cafa3" />
   <Project Path="Hangman.ConsoleApp/Hangman.ConsoleApp.csproj">
     <Build Solution="Debug|*" Project="false" />

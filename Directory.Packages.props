@@ -1,0 +1,34 @@
+<Project>
+
+  <PropertyGroup>
+	<!-- Włącz centralne zarządzanie wersjami pakietów -->
+	<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	<!-- Ostrzeżenie gdy pakiet nie ma wersji zdefiniowanej centralnie -->
+	<CentralPackageVersionsFileImported>true</CentralPackageVersionsFileImported>
+  </PropertyGroup>
+
+  <ItemGroup Label="Testing Frameworks">
+	<!-- xUnit -->
+	<PackageVersion Include="xunit" Version="2.9.2" />
+	<PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
+	<!-- MSTest -->
+	<PackageVersion Include="MSTest" Version="4.0.2" />
+	<!-- Narzędzia testowe -->
+	<PackageVersion Include="coverlet.collector" Version="6.0.2" />
+  </ItemGroup>
+
+  <ItemGroup Label="Testing Tools">
+	<!-- AutoFixture -->
+	<PackageVersion Include="AutoFixture" Version="4.18.1" />
+	<PackageVersion Include="AutoFixture.Xunit2" Version="4.18.1" />
+	<!-- Moq -->
+	<PackageVersion Include="Moq" Version="4.20.72" />
+  </ItemGroup>
+
+  <ItemGroup Label="Performance and Diagnostics">
+	<!-- BenchmarkDotNet -->
+	<PackageVersion Include="BenchmarkDotNet" Version="0.15.2" />
+	<PackageVersion Include="Microsoft.VisualStudio.DiagnosticsHub.BenchmarkDotNetDiagnosers" Version="18.7.37220.1" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,1 @@
+wygeneruj pojedynczy string token

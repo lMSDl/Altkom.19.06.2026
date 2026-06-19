@@ -1,8 +1,12 @@
 <Solution>
+  <Project Path="BenchmarkSuite1/BenchmarkSuite1.csproj" />
   <Project Path="ConsoleApp/ConsoleApp.csproj" />
+  <Project Path="ConsoleApp_Profiler/ConsoleApp_Profiler.csproj" Id="4a4bbf2b-201a-49ea-8276-de53f24cafa3" />
   <Project Path="Hangman.ConsoleApp/Hangman.ConsoleApp.csproj">
     <Build Solution="Debug|*" Project="false" />
   </Project>
+  <Project Path="Hangman.UnitTests/Hangman.UnitTests.csproj" />
   <Project Path="Models/Models.csproj" />
+  <Project Path="WebApp.UnitTests/WebApp.UnitTests.csproj" Id="1c4c9b84-0c28-4078-ac15-203d47792481" />
   <Project Path="WebApp/WebApp.csproj" Id="53d3e6d2-7e17-40f2-a73a-a106966b917b" />
 </Solution>

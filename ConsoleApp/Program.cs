@@ -3,36 +3,8 @@
 Console.WriteLine("Hello, World!");
 
 
-int Sum(int a, int b) //int, Sum, (, int, a, int, b, )
-    => a + b; 
+// Math methods moved to ConsoleApp.MathOperations
 
-
-//substract two float numbers and return integer result
-int Subtract(float a, float b)
-{
-    return (int)(a - b);
-}
-
-
-//multiply two numbers
-int Multiply(int a, int b)
-{
-    return a * b;
-}
-
-//pierwotnie wygenerowana funkcja Sum została zmodyfikowana przez użytkownika
-//co spwodowało, że model dostosował kolejny generowany kod (Multiply) do zmian użytkownika
-//kontenst "nauki" copilot jest ograniczony do bieżącej sesji - np. wyłączenie IDE powoduje utratę pamięci "nauki"
-
-//dzielenie dwóch liczb
-float Divide(float a, float b)
-{
-    if (b == 0)
-    {
-        throw new DivideByZeroException("Cannot divide by zero.");
-    }
-    return a / b;
-}
 /*
         Opisowe(naturalny język) – piszemy w komentarzu dokładnie, co chcemy uzyskać. Przykład:
         // Napisz metodę, która zwraca listę użytkowników posortowaną malejąco po dacie rejestracji

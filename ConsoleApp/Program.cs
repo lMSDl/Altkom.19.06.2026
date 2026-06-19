@@ -75,3 +75,40 @@ Point3D CreatePoint(float[] data)
     }
     return new Point3D(data[0], data[1], data[2]);
 } 
+
+
+public class PeselValidator
+{
+    public static bool IsValidPesel(string pesel)
+    {
+        if (string.IsNullOrWhiteSpace(pesel) || pesel.Length != 11)
+            return false;
+
+        if (!pesel.All(char.IsDigit))
+            return false;
+
+        int[] weights = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3 };
+        int sum = 0;
+
+        for (int i = 0; i < 10; i++)
+        {
+            sum += (int.Parse(pesel[i].ToString()) * weights[i]);
+        }
+
+        int checkDigit = (10 - (sum % 10)) % 10;
+        int lastDigit = int.Parse(pesel[10].ToString());
+
+        return checkDigit == lastDigit;
+    }
+
+    public static (bool IsValid, string Gender) ValidatePeselWithGender(string pesel)
+    {
+        if (!IsValidPesel(pesel))
+            return (false, "Nie dotyczy");
+
+        int genderDigit = int.Parse(pesel[9].ToString());
+        string gender = genderDigit % 2 == 0 ? "Female" : "Male";
+
+        return (true, gender);
+    }
+}
